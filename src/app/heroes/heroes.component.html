@@ -1,0 +1,8 @@
+<p>
+  heroes works!
+</p>
+<ul class="items">
+  <li (click)="onSelect(hero)" *ngFor="let hero of heroes" [routerLink]="['hero/:id',hero.id]">
+    <span class="badge">{{hero.id}}</span>{{hero.name}}
+  </li>
+</ul>
